@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patricia Pons Tomás | Científica e Investigadora</title>
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4f7fb;
+  color: #333;
+}
+
+.hero {
+  height: 60vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url("imagen (2).png") center/contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+section {
+  padding: 60px 10%;
+}
+
+.about {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.about img {
+  width: 40%;
+  border-radius: 15px;
+}
+
+.cards {
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.image-section {
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.gallery div {
+  width: 30%;
+}
+
+.highlight {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.video-section {
+  text-align: center;
+  background: white;
+  padding: 40px 10%;
+}
+
+.video-section iframe {
+  max-width: 800px;
+  width: 100%;
+  height: 450px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+footer {
+  background: #1c2833;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Patricia Pons Tomás</h1>
+      <p>Científica e Investigadora en Interacción Persona-Ordenador</p>
+    </div>
+  </header>
+
+  <section class="about">
+    <img src="images.jpg" alt="Patricia en conferencia">
+    <div>
+      <h2>¿Quién es Patricia Pons?</h2>
+      <p>
+        Patricia Pons Tomás es una científica española especializada en
+        <strong>Interacción Persona-Ordenador (HCI)</strong>, realidad virtual
+        y tecnologías inmersivas aplicadas a la salud y la industria.
+        Actualmente desarrolla su labor investigadora en el Instituto
+        Tecnológico de Informática (ITI), en Valencia.
+      </p>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <h2>Conoce más sobre Patricia</h2>
+    <iframe src="Patricia-Pons-Video.mp4" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+  </section>
+
+  <section class="cards">
+    <h2>Formación Académica</h2>
+    <div class="card-container">
+      <div class="card">🎓 Doctora en Informática (UPV)</div>
+      <div class="card">📘 Máster en Ingeniería del Software</div>
+      <div class="card">🌍 Estancia en University of Melbourne</div>
+    </div>
+  </section>
+
+  <section class="image-section">
+    <h2>Líneas de Investigación</h2>
+    <div class="gallery">
+      <div>
+        <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc">
+        <p>Interacción Persona-Ordenador</p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620">
+        <p>Realidad Virtual y Mixta</p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c">
+        <p>Machine Learning</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="highlight">
+    <h2>Premios y Reconocimientos</h2>
+    <p>
+      En 2019 recibió el <strong>Premio Jóvenes Investigadores Informáticos</strong>
+      otorgado por la Sociedad Científica Informática de España y la Fundación BBVA,
+      gracias a la excelencia de su tesis doctoral.
+    </p>
+  </section>
+
+  <section class="about">
+    <div>
+      <h2>Divulgación Científica</h2>
+      <p>
+        Patricia participa activamente en eventos como TEDx, Ignite y
+        Google Women Techmakers, promoviendo la ciencia, la tecnología
+        y el papel de la mujer en la investigación.
+      </p>
+    </div>
+    <img src="1700046745437.jpg" alt="Conferencia" style="width: 40%;">
+  </section>
+
+  <footer>
+    <p>© 2026 · Página educativa sobre Patricia Pons Tomás</p>
+  </footer>
+
+</body>
+</html>
