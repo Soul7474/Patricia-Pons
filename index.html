@@ -5,127 +5,220 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Patricia Pons Tomás | Científica e Investigadora</title>
   <style>
+    /* RESET Y ESTILOS GENERALES */
     * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-}
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
 
-body {
-  background: #f4f7fb;
-  color: #333;
-}
+    body {
+      background: #f4f7fb;
+      color: #333;
+      line-height: 1.6; /* Mejora la lectura */
+    }
 
-.hero {
-  height: 60vh;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-  url("imagen (2).png") center/contain;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-}
+    img {
+      max-width: 100%; /* Evita que las imágenes se salgan de su contenedor */
+      height: auto;
+    }
 
-.hero h1 {
-  font-size: 3rem;
-}
+    /* HERO SECTION */
+    .hero {
+      height: 60vh;
+      min-height: 400px; /* Evita que sea muy pequeño en móviles apaisados */
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url("imagen (2).png") center/cover no-repeat; /* 'Cover' es mejor que 'contain' para fondos */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 0 20px;
+    }
 
-.hero p {
-  font-size: 1.2rem;
-  margin-top: 10px;
-}
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
 
-section {
-  padding: 60px 10%;
-}
+    .hero p {
+      font-size: 1.2rem;
+    }
 
-.about {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-}
+    /* SECCIONES GENERALES */
+    section {
+      padding: 60px 10%;
+    }
 
-.about img {
-  width: 40%;
-  border-radius: 15px;
-}
+    /* SOBRE PATRICIA (TEXTO + IMAGEN) */
+    .about {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+    }
 
-.cards {
-  text-align: center;
-}
+    .about img {
+      width: 40%;
+      border-radius: 15px;
+      object-fit: cover;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
 
-.card-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 30px;
-}
+    /* TARJETAS DE FORMACIÓN */
+    .cards {
+      text-align: center;
+    }
 
-.card {
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
-  width: 250px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-}
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+      flex-wrap: wrap; /* Permite que las tarjetas bajen si no caben */
+    }
 
-.card:hover {
-  transform: translateY(-10px);
-}
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      width: 250px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+    }
 
-.image-section {
-  text-align: center;
-}
+    .card:hover {
+      transform: translateY(-10px);
+    }
 
-.gallery {
-  display: flex;
-  gap: 25px;
-  margin-top: 30px;
-}
+    /* GALERÍA DE IMÁGENES */
+    .image-section {
+      text-align: center;
+    }
 
-.gallery img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 12px;
-}
+    .gallery {
+      display: flex;
+      gap: 25px;
+      margin-top: 30px;
+      justify-content: center;
+    }
 
-.gallery div {
-  width: 30%;
-}
+    .gallery div {
+      width: 30%;
+    }
 
-.highlight {
-  background: #2c3e50;
-  color: white;
-  text-align: center;
-  border-radius: 20px;
-}
+    .gallery img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
 
-.video-section {
-  text-align: center;
-  background: white;
-  padding: 40px 10%;
-}
+    /* DESTACADO */
+    .highlight {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      border-radius: 20px;
+      margin: 40px 10%; /* Margen lateral para que no toque los bordes */
+      padding: 40px;
+    }
 
-.video-section iframe {
-  max-width: 800px;
-  width: 100%;
-  height: 450px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-}
+    /* VIDEO */
+    .video-section {
+      text-align: center;
+      background: white;
+      padding: 60px 10%;
+    }
 
-footer {
-  background: #1c2833;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-}
+    .video-wrapper {
+      position: relative;
+      max-width: 800px;
+      width: 100%;
+      margin: 0 auto;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
 
+    /* Truco para mantener el video responsivo */
+    .video-wrapper iframe {
+      width: 100%;
+      height: 450px; /* Altura base */
+    }
+
+    /* FOOTER */
+    footer {
+      background: #1c2833;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    /* =========================================
+       MEDIA QUERIES (ESTILOS PARA MÓVIL)
+       ========================================= */
+    @media (max-width: 768px) {
+      /* Ajustes generales de espaciado */
+      section {
+        padding: 40px 5%;
+      }
+
+      /* Hero más pequeño */
+      .hero h1 {
+        font-size: 2rem;
+      }
+      
+      /* About: Columna en vez de fila e imagen arriba */
+      .about {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about img {
+        width: 100%; /* Imagen ocupa todo el ancho */
+        max-width: 400px; /* Pero no gigante */
+        margin-bottom: 20px;
+      }
+
+      /* Invertir orden en la segunda sección About para que la foto quede arriba en móvil */
+      .about:nth-of-type(2) {
+        flex-direction: column-reverse;
+      }
+
+      /* Tarjetas al 100% de ancho */
+      .card {
+        width: 100%;
+      }
+
+      /* Galería en columna */
+      .gallery {
+        flex-direction: column;
+      }
+
+      .gallery div {
+        width: 100%;
+      }
+
+      /* Highlight ocupa casi todo el ancho */
+      .highlight {
+        margin: 20px 5%;
+        padding: 30px 20px;
+      }
+
+      /* Video responsive en altura */
+      .video-wrapper iframe {
+        height: 250px;
+      }
+    }
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -154,11 +247,13 @@ footer {
 
   <section class="video-section">
     <h2>Conoce más sobre Patricia</h2>
-    <iframe src="Patricia-Pons-Video.mp4" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-    </iframe>
+    <div class="video-wrapper">
+      <iframe src="Patricia-Pons-Video.mp4" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+      </iframe>
+    </div>
   </section>
 
   <section class="cards">
@@ -174,28 +269,28 @@ footer {
     <h2>Líneas de Investigación</h2>
     <div class="gallery">
       <div>
-        <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc">
+        <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc" alt="HCI">
         <p>Interacción Persona-Ordenador</p>
       </div>
       <div>
-        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620">
+        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620" alt="VR">
         <p>Realidad Virtual y Mixta</p>
       </div>
       <div>
-        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c">
+        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c" alt="ML">
         <p>Machine Learning</p>
       </div>
     </div>
   </section>
 
-  <section class="highlight">
+  <div class="highlight">
     <h2>Premios y Reconocimientos</h2>
     <p>
       En 2019 recibió el <strong>Premio Jóvenes Investigadores Informáticos</strong>
       otorgado por la Sociedad Científica Informática de España y la Fundación BBVA,
       gracias a la excelencia de su tesis doctoral.
     </p>
-  </section>
+  </div>
 
   <section class="about">
     <div>
@@ -206,7 +301,7 @@ footer {
         y el papel de la mujer en la investigación.
       </p>
     </div>
-    <img src="1700046745437.jpg" alt="Conferencia" style="width: 40%;">
+    <img src="1700046745437.jpg" alt="Conferencia">
   </section>
 
   <footer>
